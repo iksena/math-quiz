@@ -14,4 +14,10 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-rules: {}
+rules: {
+  'react/jsx-filename-extension': 'off',
+  'no-underscore-dangle': 'off',
+  'jsx-a11y/img-redundant-alt': 'off',
+  'react/jsx-props-no-spreading': 'off',
+  'comma-dangle': 'error',
+}
