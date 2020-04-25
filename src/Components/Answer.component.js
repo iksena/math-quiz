@@ -6,14 +6,14 @@ const _renderContent = (content) => (
   <Markdown source={content} />
 );
 
-const Question = ({ content }) => (
+const Answer = ({ content }) => (
   <>
     {_renderContent(content)}
   </>
 );
 
-Question.propTypes = {
+Answer.propTypes = {
   content: PropTypes.string.isRequired,
 };
 
-export default Question;
+export default Answer;

@@ -6,6 +6,7 @@ import RemarkMathPlugin from 'remark-math';
 
 const _mapProps = (props) => ({
   ...props,
+  escapeHtml: false,
   plugins: [
     RemarkMathPlugin,
   ],
