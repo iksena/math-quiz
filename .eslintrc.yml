@@ -19,5 +19,6 @@ rules: {
   'no-underscore-dangle': 'off',
   'jsx-a11y/img-redundant-alt': 'off',
   'react/jsx-props-no-spreading': 'off',
-  'comma-dangle': 'error',
+  'comma-dangle': 'off',
+  'jsx-a11y/click-events-have-key-events': 'off'
 }

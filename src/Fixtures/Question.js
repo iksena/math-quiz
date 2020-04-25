@@ -3,7 +3,7 @@ const response = {
   data: {
     fetchedQuestion: {
       id: 13,
-      content: 'Given this formula $$s = ut^{2} + \\frac{1}{2}at^{2}$$ <br/> Make "$a$" the subject of the formula',
+      content: 'Given this formula $$s = ut^{2} + \\frac{1}{2}at^{2}$$ <br/> <img src="https://www.physicsclassroom.com/PhysicsClassroom/media/Concept-Builders/Acceleration/images/Q49.png"/> <br/> Make "$a$" the subject of the formula',
       answers: [
         {
           id: 26,
