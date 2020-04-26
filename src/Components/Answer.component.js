@@ -9,7 +9,10 @@ const _renderContent = (content) => (
 );
 
 const Answer = ({
-  content, answer_option: option, chosen, onClick,
+  content,
+  answer_option: option,
+  chosen,
+  onClick,
 }) => (
   <div
     className={`answer ${chosen && 'chosen'}`}
