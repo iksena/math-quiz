@@ -4,13 +4,15 @@ import Answer from '../Components/Answer.component';
 
 import Question from '../Components/Question.component';
 
-const _renderAnswers = (answers, chosenAnswer, onClick) => answers.map((answer, index) => (
+const _renderAnswers = (answers, chosenAnswer, handleClick) => answers.map((answer, index) => (
   <Answer
     {...answer}
     chosen={chosenAnswer === index}
-    onClick={onClick(index)}
+    onClick={handleClick(index)}
   />
 ));
+
+const _handleAnswerClick = (setAnswer) => (index) => () => setAnswer(index);
 
 const QuizContainer = ({ question }) => {
   const [chosenAnswer, setChosenAnswer] = useState(-1);
@@ -18,7 +20,7 @@ const QuizContainer = ({ question }) => {
   return (
     <>
       <Question content={question.content} />
-      {_renderAnswers(question.answers, chosenAnswer, (index) => () => setChosenAnswer(index))}
+      {_renderAnswers(question.answers, chosenAnswer, _handleAnswerClick(setChosenAnswer))}
     </>
   );
 };
