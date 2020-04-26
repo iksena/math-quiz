@@ -21,7 +21,9 @@ const Answer = ({
 
 Answer.propTypes = {
   content: PropTypes.string.isRequired,
-  answer_option: PropTypes.string.isRequired,
+  answer_option: PropTypes.shape({
+    name: PropTypes.string
+  }).isRequired,
   chosen: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };
