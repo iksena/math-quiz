@@ -1,21 +1,21 @@
-This is a sample React web app to displat a math quiz with formula and image.
+This is a sample React web app to display a math quiz with equations, formulas, and images.
 It implements the following libraries:
 - [React Markdown](https://github.com/rexxars/react-markdown)  
 - [React KaTeX](https://github.com/talyssonoc/react-katex)  
 - [Remark Math](https://github.com/remarkjs/remark-math)  
   
 The app implements the following data structure for a question
-```javascript
-question: {
- content: string,
- answers: [
-  {
-   content: string
-   answer_option: {
-    name: string
-   }
-  }
- ]
+```metadata json
+"question": {
+  "content": "markdown and html",
+  "answers": [
+    {
+      "content": "markdown and html",
+      "answer_option": {
+        "name": "string"
+      }
+    }
+  ]
 }
 ```
 
