@@ -5,15 +5,13 @@ It implements the following libraries:
 - [Remark Math](https://github.com/remarkjs/remark-math)  
   
 The app implements the following data structure for a question
-```metadata json
+```json
 "question": {
-  "content": "markdown and html",
+  "content": "Markdown and TeX",
   "answers": [
     {
-      "content": "markdown and html",
-      "answer_option": {
-        "name": "string"
-      }
+      "content": "Markdown and TeX",
+      "option": "string"
     }
   ]
 }

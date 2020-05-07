@@ -1,45 +1,28 @@
 const response = {
-  status: 'success',
-  data: {
-    fetchedQuestion: {
-      id: 13,
-      content: 'Given this formula $$s = ut^{2} + \\frac{1}{2}at^{2}$$ <br/> ![alt text](https://www.physicsclassroom.com/PhysicsClassroom/media/Concept-Builders/Acceleration/images/Q49.png) <br/> Make "$a$" the subject of the formula',
+  status: 200,
+  questions: [
+    {
+      content: 'Given this formula \n$$\ns = ut^{2} + \\frac{1}{2}at^{2}\n$$\n \n\n![alt text](https://www.physicsclassroom.com/PhysicsClassroom/media/Concept-Builders/Acceleration/images/Q49.png)\n\n Make "$a$" the subject of the formula',
       answers: [
         {
-          id: 26,
           content: '$a = \\frac{s}{ut} - \\frac{1}{2}t^{2}$',
-          answer_option: {
-            id: 1,
-            name: 'A',
-          },
+          option: 'A'
         },
         {
-          id: 27,
           content: '4/9',
-          answer_option: {
-            id: 2,
-            name: 'B',
-          },
+          option: 'B'
         },
         {
-          id: 28,
           content: '20/21',
-          answer_option: {
-            id: 3,
-            name: 'C',
-          },
+          option: 'C'
         },
         {
-          id: 29,
           content: '18/25',
-          answer_option: {
-            id: 4,
-            name: 'D',
-          },
-        },
-      ],
-    },
-  },
+          option: 'D'
+        }
+      ]
+    }
+  ]
 };
 
-export default { question: response.data.fetchedQuestion };
+export default { question: response.questions[0] };

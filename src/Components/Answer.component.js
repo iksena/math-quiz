@@ -10,7 +10,7 @@ const _renderContent = (content) => (
 
 const Answer = ({
   content,
-  answer_option: option,
+  option,
   chosen,
   onClick,
 }) => (
@@ -18,15 +18,13 @@ const Answer = ({
     className={`answer ${chosen && 'chosen'}`}
     onClick={onClick}
   >
-    {_renderContent([option.name, content].join('. '))}
+    {_renderContent([option, content].join('. '))}
   </div>
 );
 
 Answer.propTypes = {
   content: PropTypes.string.isRequired,
-  answer_option: PropTypes.shape({
-    name: PropTypes.string
-  }).isRequired,
+  option: PropTypes.string.isRequired,
   chosen: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };

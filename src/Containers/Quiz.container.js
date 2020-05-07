@@ -29,6 +29,7 @@ QuizContainer.propTypes = {
   question: PropTypes.shape({
     content: PropTypes.string,
     answers: PropTypes.arrayOf(PropTypes.shape({
+      option: PropTypes.string,
       content: PropTypes.string,
     })),
   }).isRequired,
