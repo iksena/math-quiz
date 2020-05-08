@@ -2,22 +2,22 @@ const response = {
   status: 200,
   questions: [
     {
-      content: 'Given this formula \n$$\ns = ut^{2} + \\frac{1}{2}at^{2}\n$$\n \n\n![alt text](https://www.physicsclassroom.com/PhysicsClassroom/media/Concept-Builders/Acceleration/images/Q49.png)\n\n Make "$a$" the subject of the formula',
+      content: 'Given a **formula** below\n$$\ns = ut + \\frac{1}{2}at^{2}\n$$\nCalculate the value of $s$ when $u = 10\\frac{m}{s}$ and $a = 2\\frac{m}{s^{2}}$ at $t = 1s$',
       answers: [
         {
-          content: '$a = \\frac{s}{ut} - \\frac{1}{2}t^{2}$',
+          content: '$9 m$',
           option: 'A'
         },
         {
-          content: '4/9',
+          content: '$10 m$',
           option: 'B'
         },
         {
-          content: '20/21',
+          content: '$11 m$',
           option: 'C'
         },
         {
-          content: '18/25',
+          content: '$12 m$',
           option: 'D'
         }
       ]

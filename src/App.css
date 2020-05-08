@@ -1,15 +1,17 @@
 .App {
-  text-align: center;
+  width: 50vw;
 }
 
 .question {
   border: black medium dashed;
+  text-align: center;
   margin: 5px;
 }
 
 .answer {
   border: black thin dotted;
   margin: 5px;
+  padding: 5px;
 }
 
 .chosen {
